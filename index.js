@@ -31,7 +31,7 @@ const display_Entries = ()=>
      <th class="px-4 py-2">Email</th>
      <th class="px-4 py-2">Password</th>
      <th class="px-4 py-2">Dob</th>
-     <th class="px-4 py-2">Accepted_terms?</th>
+     <th class="px-4 py-2">Acceptedterms?</th>
      </tr>${tableEntries} </table>`;
      let details=document.getElementById("user-entries");
      details.innerHTML = table;
@@ -79,9 +79,6 @@ const display_Entries = ()=>
     } else {
       dobElement.setCustomValidity("");
     }
-  }
-  window.onbeforeunload = () => {
-    localStorage.clear();
   }
  
  userform.addEventListener("submit",saveUserform);
