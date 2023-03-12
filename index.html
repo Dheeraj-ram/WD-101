@@ -3,6 +3,11 @@
     <head>
         <title>Registration-Form</title>
         <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            input:invalid:focus{
+                border: 1px solid rgb(230, 30, 30);
+            }
+        </style>
     </head>
     <body style="background-image: linear-gradient(45deg, rgb(229, 232, 132), rgb(248, 177, 111));">
         <div class="relative py-8 justify-center">
@@ -18,34 +23,27 @@
                             <label for="name" class="text-md w-40 inline-block font-medium leading-5 text-gray-700">
                                 Name 
                             </label>
-                            <input required type="text" id="name" name="name" class="bg-gray-100 inline-block rounded-lg shadow-md px-4 py-2.5 mb-5 text-base leading-6 placeholder-gray-400 focus :invalid:border-red-300 focus:invalid:ring-red-300"
-                            placeholder="Enter Your Full Name"></br>
+                            <input required type="text" id="name" name="name" class="bg-gray-100 inline-block rounded-lg shadow-md px-4 py-2.5 mb-5 text-base leading-6 placeholder-gray-400 " placeholder="Enter Your Full Name"></br>
 
                             <label for="email" class="text-md w-40 initial-block font-medium leading-5 text-gray-700">
                                 Email      
                             </label>
-                            <input required type="email" id="email" name="email" style="margin-left:120px" class="bg-gray-100 inline-block rounded-lg shadow-md px-4 py-2.5 mb-5 text-base leading-6 placeholder-gray-400
-                            focus:invalid:border-red-300 focus:invalid:ring-red-300" placeholder="Enter Your Email" ></br>
+                            <input required type="email" id="email" name="email" style="margin-left:120px" class="bg-gray-100 inline-block rounded-lg shadow-md px-4 py-2.5 mb-5 text-base leading-6 placeholder-gray-400 " placeholder="Enter Your Email" ></br>
                             <label for="password" class="text-md w-40 inline-block font-medium leading-5 text-gray-700">
                                 Password
                             </label>
-                            <input required type="password" id="password" name="password" class="bg-gray-100 inline-block rounded-lg shadow-md px-4 py-2.5 mb-5 text-base leading-6 placeholder-gray-400
-                            focus:invalid:border-red-300 focus:invalid:ring-red-300"
-                            placeholder="Enter Your Password" ></br>
+                            <input required type="password" id="password" name="password" class="bg-gray-100 inline-block rounded-lg shadow-md px-4 py-2.5 mb-5 text-base leading-6 placeholder-gray-400 " placeholder="Enter Your Password" ></br>
                             <label for="dob" class="text-md w-40 inline-block font-medium leading-5 text-gray-700">
                                 Date Of Birth
                             </label>
-                            <input required type="date" id="dob" class="bg-gray-100 inline-block rounded-lg shadow-md px-4 py-2.5 mb-5 text-base leading-6 placeholder-gray-100
-                            focus:invalid:border-red-300 focus:invalid:ring-red-300" ></br>
-                            <label for="acceptTerms"
-                            class="text-md w-50 inline-block font-medium leading-5 text-gray-700">
-                            Accept Terms & Conditions
+                            <input required type="date" id="dob" class="bg-gray-100 inline-block rounded-lg shadow-md px-4 py-2.5 mb-5 text-base leading-6 placeholder-gray-100 " ></br>
+                            <label for="acceptTerms" class="text-md w-50 inline-block font-medium leading-5 text-gray-700">
+                                Accept Terms & Conditions
                             </label>
-                            <input required type="checkbox" id="acceptTerms" name="acceptTerms"
-                            class="bg-gray-100 inline-block rounded-lg shadow-md px-4 py-3 mb-5 text-base leading-6 placeholder-gray-500 focus:placeholder-gray-500"></br>
-                            <button type="submit"
-                            class="w-fit rounded-lg shadow-md px-8 py-4 bg-blue-500 text-white hover:bg-blue-500 focus:outline-none focus:shadow-outline tansition" 
-                            onclick="isAgeValid()">Submit</button>
+                            <input required type="checkbox" id="acceptTermsAndConditions" name="acceptTerms" class="bg-gray-100 inline-block rounded-lg shadow-md px-4 py-3 mb-5 text-base leading-6 placeholder-gray-500 focus:placeholder-gray-500"></br>
+                            <button type="submit"class="w-fit rounded-lg shadow-md px-8 py-4 bg-blue-500 text-white hover:bg-blue-500 focus:outline-none focus:shadow-outline tansition" onclick="isAgeValid()">
+                                Submit
+                            </button>
                            </form>
                         </div>
                     </div>
